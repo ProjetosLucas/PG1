@@ -3,6 +3,7 @@ Meu relatório de PG1
 
 Segue os passos para colocar no seu computador 
 
+1- Primeiramente baixa o seguinte programa MikTex que está no seguinte site: https://miktex.org/download. Lembra-se de acionar automaticamente para ele baixar patotes e arquivos automaticamente e deixar como usuário público na hora de instalar.
 
 1- Abra o Git e escreva o seguinte comando: 
 
