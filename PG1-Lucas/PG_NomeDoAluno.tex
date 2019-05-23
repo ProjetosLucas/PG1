@@ -14,7 +14,7 @@
 	a4paper,			% tamanho do papel. 
 	% -- opções da classe abntex2 --
 	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
-	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
 	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
 	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
 	% -- opções do pacote babel --
@@ -136,7 +136,7 @@
 \newcommand{\universidade}{Universidade Federal do Espírito Santo}
 \newcommand{\centro}{Centro Tecnológico}
 \newcommand{\departamento}{Departamento de Engenharia Elétrica}
-\newcommand{\disciplina}{Projeto de Graduação}
+\newcommand{\disciplina}{Proposta de Projeto de Graduação}
 \newcommand{\imprimirINSTITUICAO}{
 	\MakeUppercase{\universidade} \\
 	\MakeUppercase{\centro} \\
@@ -161,10 +161,10 @@
 	\par
 	\disciplina
 	\par}
-\tipotrabalho{Projeto de Graduação}
+\tipotrabalho{Proposta de Projeto de Graduação}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Parte manuscrita do Projeto de Graduação do aluno \imprimirautor, apresentado ao Departamento de Engenharia Elétrica do Centro Tecnológico da Universidade Federal do Espírito Santo, como requisito parcial para obtenção do grau de Engenheiro Eletricista.}
+\preambulo{Parte manuscrita da Proposta de Projeto de Graduação do aluno \imprimirautor, apresentada ao Departamento de Engenharia Elétrica do Centro Tecnológico da Universidade Federal do Espírito Santo, como requisito parcial para aprovação na disciplina “ELE08552 – Projeto de Graduação I”.}
 
 % --------------------------------------------------- %
 %		Configurações do aspecto final do PDF		  %
@@ -263,6 +263,10 @@
     		\hspace{.45\textwidth}
 	    \begin{minipage}{.5\textwidth}
         	\imprimirpreambulo
+	        \assinatura{\textbf{\imprimircoorientador}\\ Professora da disciplina}
+	        \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
+			\assinatura{\textbf{Profa. Dra. Fulana}  \\ Coorientador}
+			\assinatura{\textbf{Lucas Soares Pessini}  \\ Aluno}
 	    \end{minipage}
     		\vspace*{\fill}
 	    \end{center}  
@@ -333,68 +337,36 @@
 % por uma imagem da página assinada pela banca com o comando abaixo:
 % \includepdf{folhadeaprovacao_final.pdf}
 
-\begin{folhadeaprovacao}
-  \begin{center}
-    {\ABNTEXchapterfont\large\imprimirautor}
-	\begin{center}
-     	\ABNTEXchapterfont\bfseries\Large\imprimirtitulo
-    \end{center}
-    %\vspace*{\fill}
-  \end{center}    
-    \imprimirpreambulo
-		\vspace{-0.5cm}
-    \begin{center}
-		\hspace{.45\textwidth}
-    \begin{minipage}{.5\textwidth}
-        Aprovado em ??, de Dezembro de 2016. \\\\
-        \textbf{COMISSÃO EXAMINADORA:}
-        \assinatura{\textbf{\imprimirorientador} \\ Instituto Federal do Espírito Santo \\ Orientadora} 
-        \assinatura{\textbf{\imprimircoorientador} \\ Universidade Federal do Espírito Santo \\ Coorientadora}
-		\assinatura{\textbf{Profa. Dra. Fulana} \\ Universidade Federal do Espírito Santo \\ Examinador}
-		\assinatura{\textbf{Prof. Dr. Fulano} \\ Universidade Federal do Espírito Santo \\ Examinador}
-    \end{minipage}
-	    \vspace*{\fill}
-   \end{center}
-         
-   \begin{center}
-      	% >> Se necessáiro, ajustar os \vspace
-		%\vspace*{0.5cm}
-    	{\large\imprimirlocal}
-    	\par
-    	{\large\imprimirdata}
-   		%\vspace*{1cm}
-  \end{center}  
-\end{folhadeaprovacao}
 
 % --------------------------------------------------- %
 %						Dedicatória				      %
-% --------------------------------------------------- %
-\begin{dedicatoria}
-   \vspace*{\fill}
-   \centering
-   \noindent
-   \textit{ Insira a dedicatória aqui!
-   } \vspace*{\fill}
-\end{dedicatoria}
+% -------------------------------------------%-------- %
+%\begin{dedicatoria}
+%   \vspace*{\fill}
+%   \centering
+%   \noindent
+%   \textit{ Insira a dedicatória aqui!
+%   } \vspace*{\fill}
+%\end{dedicatoria}
 
 % --------------------------------------------------- %
 %					Agradecimentos				      %
 % --------------------------------------------------- %
 
-\begin{agradecimentos}
-	Insira os agradecimentos aqui!
-\end{agradecimentos}
+%\begin{agradecimentos}
+%	Insira os agradecimentos aqui!
+%\end{agradecimentos}
 
 % --------------------------------------------------- %
 %						Epígrafe			      	  %	
 % --------------------------------------------------- %
 
-\begin{epigrafe}
-    \vspace*{\fill}
-	\begin{flushright}
-		Insira a epígrafe aqui!
-	\end{flushright}
-\end{epigrafe}
+%\begin{epigrafe}
+ %   \vspace*{\fill}
+%	\begin{flushright}
+%		Insira a epígrafe aqui!
+%	\end{flushright}
+%\end{epigrafe}
 
 % --------------------------------------------------- %
 %						Resumo				      	  %	
@@ -469,17 +441,27 @@ Insira o resumo aqui!
 
 \textual
 
-\chapter[Introdução]{Introdução}
-\input{introducao}
+\chapter[Apresentação e objeto de pesquisa]{Apresentação e objeto de pesquisa}
+\input{Apresentacao}
 
 \chapter[Justificativa]{Justificativa}
 \input{justificativa}
 
-\chapter[Objetivos]{Objetivos}
+\chapter[Objetivo geral e objetivos específicos]{Objetivo geral e objetivos específicos}
 \input{objetivos}
 
-\chapter[Metodologia]{Metodologia}
+\chapter[Embasamento Teórico]{Embasamento Teórico}
+\input{embasamento}
+
+\chapter[Metodologia e etapas de desenvolvimento]{Metodologia e etapas de desenvolvimento}
 \input{metodologia}
+
+\chapter[Cronograma de execução]{Cronograma de execução}
+\input{cronograma}
+
+\chapter[Alocação de recursos
+]{Alocação de recursos}
+\input{alocacao}
 
 % --------------------------------------------------- %
 %				Elementos Pós-Textuais				  %
