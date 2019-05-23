@@ -5,10 +5,11 @@ Segue os passos para colocar no seu computador
 
 
 1- Abra o Git e escreva o seguinte comando: 
+
 	git clone https://github.com/ProjetosLucas/PG1.git C:\Users\Arthur\Desktop\Visão\PG1\PG1
 
 2- ATENÇÃO: Antes de começa a fazer a alteração no código faça o seguinte, onde você coloca o seu e-mail no "you@example.com", o seu nome em "Your Name".
-	
+
 	git config --global user.email "lucassoarespessini@gmail.com"
 	git config --global user.name "Lucas Soares Pessini"
 	cd C:\Users\Arthur\Desktop\Visão\PG1\PG1
