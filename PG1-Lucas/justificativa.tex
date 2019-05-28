@@ -1,20 +1,15 @@
 % Ajustar esse \vspace de acordo com o necessário
 \vspace{-42pt}
-Como o Laboratório do prédio da Engenharia Elétrica possui equipamentos de alto custo, é necessário ter um controle minimamente estruturado dos empréstimos. Para ter este controle, os dados do equipamento e o aluno que solicitou ser armazenado corretamente para que, caso ocorra algum problema com o equipamento, sejam tomadas atitudes necessárias para resolvê-lo. O controle manual desses empréstimos é efetivo até certo ponto, mas pode apresentar alguns erros.
+Os equipamentos do Laboratório do prédio da Engenharia Elétrica são de alto custo e são utilizados nas aula práticas, o que torna necessário ter um controle minimamente estruturado dos empréstimos para que não tenha percas, prejuízos e aulas práticas com alunos sem equipamentos. Para ter este controle, os dados do equipamento e do aluno que solicitou devem ser armazenado corretamente para que, caso ocorra algum problema com o equipamento, sejam tomadas atitudes necessárias para resolvê-lo, ou caso seja utilizado em alguma outra aula, não possa ser emprestado. O controle manual desses empréstimos é efetivo até certo ponto, mas pode apresentar alguns erros.
 
-Com um sistema automatizado para ganhar agilidade, maior segurança na data do empréstimo e ainda manter um histórico atualizado de cada um dos equipamentos de empréstimos. Uma implementação de um sistema eletrônico para controlar os empréstimos necessários para que os dados sejam registrados corretamente, e isso acabará evitando tempestades no futuro.
+Com um sistema automatizado ganha agilidade, maior segurança na data do empréstimo e ainda manter um histórico atualizado de cada um dos equipamentos de empréstimos. Uma implementação de um sistema eletrônico para controlar os empréstimos é necessário para que os dados sejam registrados corretamente.
 
-Manter um histórico de empréstimos é importante para evitar o uso excessivo do mesmo equipamento, ou seja, nem sempre emprestar equipamentos mesmo para evitar o seu desgaste excesivo.Como uso já foi dito antes, até que existam sistemas que possam ser utilizados, mas eles não são desenvolvidos para isto, possuindo funções excedentes e alto custo. Desta forma, o sistema foi desenvolvido para automatizar o processamento de empréstimos do equipamento e armazenar o histórico do mesmo.
+Manter um histórico de empréstimos é importante para evitar o uso excessivo do mesmo equipamento, ou seja, nem sempre emprestar equipamentos mesmo para evitar o seu desgaste excesivo. Já existem sistemas que possam ser utilizados, mas muitos são desenvolvidos para bibliotecas, possuindo funções excedentes e alto custo. Desta forma, o sistema será desenvolvido para automatizar o processamento de empréstimos do equipamento e armazenar o histórico. 
 
-A automatização de empréstimos pode ser feita com algum sistema já existente, mas os sistemas são desenvolvidos para gerenciamento de bibliotecas[6], o que faz com que eles possuam funções que não são necessárias no caso de controle de empréstimos de equipamentos
-\begin{itemize}
-   \item Listar relacionamento por aula, sala ou tipo de item;
-   \item Relatório de itens emprestados;
-   \item Histórico de empréstimo por estudante;
-   \item Identificar estudantes por meio do cartão de acesso ao RU;
-   \item Modelos de etiquetas que você pode personalizar;
-   \item Inclusão de fotos dos estudantes e KITs/livros;
-   \item Várias opções de gerar relatório;
-   \item Emissão de recibo de empréstimo e devolução por e-mail;
-   \item Baixo Custo.
-\end{itemize}
+Também podem ser feitos diversas funções em um sistema automatizado de BD (Banco de Dados) que facilitam na visualização dos dados de emprestimos: listar os equipamentos utilizados por aula, por aluno, ou sala; diversas formas de gerar relatório dos itens emprestados; e histórico de empréstimo por estudante.
+
+Também esse sistema irá permitir que equipamentos sejam utilizados fora do laboratório, pois poderá monitorá a suas localizações através de um sistema com GPS que alimenta o banco de dados com a posições geográficas dos equipamentos.
+
+Deve-se pesquisar a forma que será feita o acesso a interface WEB e ao banco de dados, quais são as pessoas que podem utilizá-las e como irão usá-las. É presciso encontrar também uma melhor forma de projetar um sistema de GPS que seja barato e discreto para serem colocados em todos os equipamentos do laboratório.
+
+Uma limitação desse projeto é pricipalemente o custo dos circuitos implementados em todos equipamentos e do sistema web fosse acessada remotamente em todas as parte do mundo. Outra limitação também é o tempo para seja desenvolvido, o que pode não conseguir atingir todos os requisitos iniciais do projeto.
