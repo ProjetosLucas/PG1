@@ -1,28 +1,19 @@
 % Ajustar esse \vspace de acordo com o necessário
 \vspace{-42pt}
 \section[Objetivos Geral]{Objetivos Geral}
-O objetivo geral deste trabalho é o desenvolvimento de um sistema de controle para equipamentos dos Laboratórios da Engenharia Elétrica da Ufes. Este sistema obtém, a partir de informações de dados, a data do produto (patrimonial) e o estudante (RA), informações adicionais adicionais de continuação de propriedades.
 
-O projeto em desenvolvimento para a disciplina de Projeto Orientado tem como objetivo a resolução de alguma problemática cotidiana por vias de Internet das coisas (do inglês, Internet of Things - IoT)[1][3]. Tomando como base a ideia acordada pelo professor e alunos da disciplina, o grupo propôs desenvolver um projeto que apresente melhorias em economia de tempo e trabalho humano dos laboratórios de eletrônica do prédio do CT II. 
+O projeto proposto tem como objetivo geral a simplificação e automatização do gerenciamento de empréstimos de equipamentos no Laboratório de Engernharia Elétrica da Ufes. Será desenvolvido de um sistema de controle para equipamentos dos laboratórios da Engenharia Elétrica da Ufes. Este sistema obterá de forma automatizada o código do equipamento, matrícula do estudante, data de empréstimo e entrega e além de informações adicionais para geração de relatórios.  
 
-Tais laboratórios são constantemente utilizados e, dessa forma, o grupo se propôs a pensar em uma solução e executá-la de forma que auxilie o processo de gerenciamento de KITs dos laboratórios, ajudando tanto alunos e professores como os próprios funcionários do local. A ideia tem aplicabilidade em diversas instâncias, para tanto, tal ideia foi generalizada para gerenciamento de KITs, de forma a atender outras áreas e não somente os laboratórios do CT II. 
-
-Atualmente os Kits ficam armazenados no almoxarifado do laboratório e quando são emprestados é preciso que o aluno entregue algum documento com foto (Carteira de Identidade ou Carteira Estudantil) onde o funcionário do laboratório guarda o documento junto com uma ficha, sendo entregue somente quando o estudante devolver o KIT. Isso gera confusão para ser pegar e entregar dos documentos e demora com filas de estudantes. Por isso é necessário que seja feito um controle mais aprimorado desses empréstimos.Além disso, o sistema manual não gurada o histórico de empréstimo dos equipamentos. 
-
-O projeto proposto tem como objetivo geral a simplificação e automatização do gerenciamento de empréstimos de livros e equipamentos em bibliotecas e empresas. Como objetivos específicos temos o intuito de registrar toda uma coleção de KITs didáticos para aulas de eletrônica nos laboratórios do CT II e ter controle com um cadastro de usuários.
-Um sistema automatizado se ganha agilidade, maior segurança nos dados do empréstimo e ainda mantém um histórico sempre atualizado dos empréstimos de cada KIT.
 
 
 \section[Objetivos Específicos]{Objetivos Especificos}
-Os objetivos específicos desse projeto foram divididos em alguns tópicos, os quais estão listados nos tópicos a seguir:
+Os objetivos estão listados nos tópicos a seguir:
 
 \begin{itemize}
-   \item Desenvolver um software na linguagem C para fazer a leitura dos códigos de barra do RA e do patrimônio do equipamento por meio de um leitor conectado a Raspberry Pi;
-   \item Modelar um sistema de banco de dados, o qual irá armazenar os dados dos empréstimos;
-   \item Desenvolver uma interface web para fazer o controle dos empréstimos de maneira automatizada. Através dessa interface, o usuário poderá controlar todo o sistema e terá acesso a todos os relatórios desejados;
-   \item Desenvolver uma forma de integração entre a interface web e o software que faz as
-leituras dos códigos de barra;
-   \item Fazer as verificações necessárias no sistema e por fim validar o seu funcionamento;
-   \item Com o sistema funcionando, desenvolver um script para a sua instalação;
+   \item Desenvolver um sistema para fazer a leitura dos códigos de barra presente na carteira de estudante e do patrimônio do equipamento;
+   \item Fazer sistema de banco de dados que irá armazenar os dados dos empréstimos;
+   \item Construir um sistema barato e discreto que insere no BD dados da localização do equipamento;
+   \item Desenvolver uma interface web para fazer o controle dos empréstimos de maneira automatizada integrado com o sistema de leitura do código de barras;
+   \item Registrar toda uma coleção de KITs didáticos para aulas de eletrônica nos laboratórios do CT II;
    \item Desenvolver um manual de operação do sistema para fornecer para o usuário.
 \end{itemize}

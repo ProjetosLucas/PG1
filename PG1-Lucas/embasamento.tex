@@ -1,11 +1,11 @@
 % Ajustar esse \vspace de acordo com o necessário
 \vspace{-42pt}
 \section[Automatização de processos]{Automatização de processos}
-Automatizar um processo consiste em defini-los e otimizá-los para em seguida executálos sobre uma plataforma informatizada (CAPIOTTI, 2012). 
+Automatizar processos significa passar as tarefas realizadas de maneira manual pelas pessoas para equipamentos, máquinas, instrumentos e outros \cite{AutomatProcess}. Para que a automatização de processos ofereça os resultados esperados, é muito importante garantir que sua implantação seja feita de maneira estruturada e de acordo com as diretrizes de onde está sendo aplicado \cite{AutomatProcess2}.No meio industrial, a preocupação com produtividade, redução do risco operacional e qualidade, leva à implantação de sistemas de automatização. 
 
-Para a automação é necessárioinicialmente elaborar a chamada arquitetura de processos. Essa arquitetura nada mais é do quea estrutura geral de um sistema de processos combinada com o conceito de automatizaçãoaplicável a ela (DAWIS, 2001).No meio industrial, a preocupação com produtividade, redução do risco operacional equalidade, leva à implantação de sistemas de automatização. 
+A parte operacional na automação industrial é uma parte do sistema que atua diretamente no processo e é um conjunto de elementos que fazem com que a máquina se mova e realize a operação desejada \cite{AutomatProcess3}, aperfeiçoamento constante das atividades dos processos.
 
-Esses sistemas visam melhorar osprocessos industriais e também auxiliam na identificação de indicadores de desempenho doprocesso, o que permite aperfeiçoamento constante das atividades dos processos(SGANDERLA, 2013).
+Automação em processos indutrias foram abordadas nas disciplinas de Controle Inteligente e Sistemas Realimentados, onde eram abordados diversos meios de controlar o processo. Neste projeto desenvolverá principalmente um software para automatizar o processo de emprétimos.
 
 \section[Aplicação WEB]{Aplicação WEB}
 Uma aplicação web pode ser definida como uma aplicação que é acessada através do navegador (NATIONS, 2016). Ela executa tarefas em um servidor e faz a interface com o usuário através de uma página web (PALMEIRA, 2013). Essas aplicações são desenvolvidas com o auxílio de diversas tecnologias, como linguagens de programação (PHP, Javascript, etc), elementos de interface gráfica (HTML, CSS) e também técnicas como o AJAX (Asynchronous JavaScript And XML).
@@ -13,8 +13,7 @@ Uma aplicação web pode ser definida como uma aplicação que é acessada atrav
 As aplicações web se diferenciam das aplicações ‘desktop’ pois não é necessário que se desenvolva um programa específico para cada hardware ou sistema operacional, basta acessálas via navegador web. Isso é possível pois todo o processamento de funções e instruções é feito no servidor web e o navegador funciona apenas como uma ‘interface’ da  plicação (NATIONS, 2016). O funcionamento de uma aplicação web pode ser melhor compreendido na Figura 2, nela é ossível observar um exemplo básico das etapas de execução de uma aplicação Web.
 
 \section[Banco de Dados]{Banco de Dados}
-Um banco de dados pode ser definido como um conjunto de dados inter-relacionados que representam informações sobre um domínio específico, ou seja, sempre que for possível agrupar informações que se relacionam, existe um banco de dados (KORTH, 1994). Como exemplo de banco de dados podemos citar um sistema de bibliotecas, uma agenda telefônica,
-um cadastro de clientes, etc.
+Um banco de dados pode ser definido como um conjunto de dados inter-relacionados que representam informações sobre um domínio específico, ou seja, sempre que for possível agrupar informações que se relacionam, existe um banco de dados (KORTH, 1994). Como exemplo de banco de dados podemos citar um sistema de bibliotecas, uma agenda telefônica, um cadastro de clientes, etc.
 
 Para fazer o gerenciamento do banco de dados, são utilizados os sistemas de gerenciamento de banco de dados (SGBD). Esses sistemas nada mais são do que um software que é capaz de manipular as informações do banco de dados e fazer a interação com o usuário.
 
@@ -27,3 +26,14 @@ acessam.
 Outro fator importante é a questão da segurança e integridade dos dados, pois geralmente eles são criptografados e não podem ser acessados tão facilmente. No entanto, a implantação de um sistema de banco de dados é mais cara e nem sempre é necessário que ele seja utilizado.
 
 Para realizar consultas, inserção, edição e relacionar os dados armazenados no banco de dados, utiliza-se uma linguagem baseada em consultas estruturadas chamada SQL (Structured Query Language).
+
+\section[Sistema Embarcado]{Sistema Embarcado}
+
+Um sistema embarcado consiste em uma união de hardware, software e em alguns casos, elementos mecânicos, que são utilizados para realizar uma determinada tarefa (STADZISZ; RENAUX, 2008). Com o advento da eletrônica e a redução dos custos, a utilização dos sistemas embarcados aumentou significativamente nos últimos anos. Para se ter uma noção, 99% de toda a produção mundial de microprocessadores é utilizada em sistemas embarcados e apenas 1% é destinada a computadores (BARR; MASSA, 1999). 
+
+Sistemas embarcados podem ser utilizados em diversas aplicações. Isso é possível devido à enorme variedade de processadores disponíveis no mercado, o que leva ao desenvolvimento de vários sistemas, os quais vão desde uma simples escova de dentes eletrônica, até o painel de controle de um avião. Apesar dessa variedade, o desenvolvimento de sistemas embarcados pode se tornar complicado devido às restrições de cada um. 
+
+Essas restrições, de acordo com Stadzisz e Renaux (2008) implicam numa grande diferença entre os sistemas embarcados e os computadores convencionais. entre elas pode-se citar as chamadas restrições dimensionais, as quais envolvem tamanho e peso, sendo de extrema importância em equipamentos de pequeno porte como um celular. Uma outra restrição é a de consumo de energia, a qual é de extrema importância em equipamentos móveis e que são alimentados por meio de baterias, como o caso de um aparelho de GPS. As restrições de recursos, como memória e processamento geram um impacto na construção do software, ou seja, é preciso ter um software eficiente para que o funcionamento do sistema não apresente problemas. Uma outra restrição que pode ser citada é a de tempo de execução. Ela é pertinente pois existem diversas aplicações que precisam ser executadas em um limite de tempo bem específico.
+
+O projeto de um sistema embarcado é extremamente ligado à sua aplicação, portanto não é possível descrever uma rotina genérica para o desenvolvimento de um projeto. Uma opção muito usada por desenvolvedores é a utilização de placas de desenvolvimento, como a Raspberry Pi, a Beaglebone, o Arduino, etc. Essas placas possuem vários periféricos e são utilizadas para facilitar e agilizar o processo de prototipação. Posteriormente é possível otimizar
+os recursos e dispensar os periféricos desnecessários e projetar um hardware específico para a aplicação desejada.
