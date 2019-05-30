@@ -1,24 +1,32 @@
-% Ajustar esse \vspace de acordo com o necessário
-\vspace{-42pt}
-A partir da problemática apontada nas seções Introdução e Objetivos temos que o problema é detalhado nos parágrafos seguintes. 
-O Laboratório mantém sob sua guarda, um número limitado de equipamentos patrimoniados, que disponibiliza para utilização pelos alunos de diversos curso visando auxiliar as aulas. 
-Alguns materiais se desgastam pelo o próprio tempo de uso e outros pela falta de cuidado e zelo. Há duas categorias de objetos: LIVRE USO e USO RESTRITO. Na categoria de LIVRE USO organizamos os objetos que podem ser utilizados por todos os estudantes. Na categoria de USO RESTRITO organizamos os objetos que são mais dispendiosos e delicados. O AutomaTIK irá abranger somente os KITs (protoboard e cabos coaxiais para conexão do gerador de sinais e osciloscópio) que são usados durantes as aulas de laboratório. 
-Com o intuito de normatizar a cessão desses bens e acreditando no uso consciente e responsável deste patrimônio pelos alunos, iremos fazer o AutomaTIK que segue o seguintes procedimento:
-Primeiramente é necessário adicionar usuários ao banco de dados do sistema. Estas são pessoas que emprestam itens. Também tem que adicionar os itens.
+% Ajustar esse \vspace de acordo com o necessário 
+\vspace{-42pt} 
+O desenvolvimento do trabalho será dividido em etapas para modularizar, dividir em partes onde cada uma dessas partes será responsável pela realização de uma etapa do projeto. Esta forma de desenvolvimento teve como objetivo reduzir falhas no processo de desenvolvimento. Os estágios de desenvolvimento serão abordadas nas seções a seguir. 
 
-\section[Cadastramento dos Alunos]{Cadastramento dos Alunos}  
-Apenas alunos e professores cadastrados no programa de empréstimo estão habilitados a solicitar empréstimo de equipamentos, ficando responsável pelo bem durante o período de empréstimo. O cadastro deve ser feito antes de qualquer empréstimo que o aluno possa fazer, onde será inseridos os dados dos alunos como nome, matrícula e código do cartão RU obtido no sensor RFID. Para realizar o cadastramento, o aluno deverá procurar o responsável pela tarefa (funcionário ou monitor).
-\section[Da verificação de disponibilidade]{Da verificação de disponibilidade}  
-O sistema faz uma verificação automática se equipamento está disponível. Assim se estiver disponível e se o aluno estiver cadastrado, poderá validar o empréstimo. 
-Ao tentar solicitar o empréstimo de um objeto e o mesmo já estiver alugado para outra pessoa, o novo solicitante será informado da condição do bem. Nesse ponto, o usuário pode fazer um pedido reserva de uso, assim quando o objeto estiver disponível o solicitante será notificado com um e-mail sobre a disponibilidade do objeto para seu futuro empréstimo. O novo solicitante tem o prazo de 1 (um) dia útil para que possa pegar o objeto de interesse. Caso o novo solicitante não venha pegar o objeto durante o prazo, sua reserva será cancelada.
-\section[Da solicitação]{Da solicitação} 
-Caso se os equipamentos estejam disponíveis e se o aluno ou professor estiver cadastrado, pode ser feita a solicitação do empréstimo na plataforma web com preenchimento de um formulário com os seguintes dados: a aula referida, números de matrícula ou código do cartão do RU (este último recebido pelo sensor RFID), código do equipamento requisitado e data e hora prevista de devolução. O número de matrícula vai ser dado pelo cartão do RU, através do sensor RFID. Também terá o campo de observações onde o usuário pode descrever possíveis anormalidades, como fios soltos, conexões errôneas, etc. dos equipamentos.
-\section[Da retirada do equipamento]{Da retirada do equipamento} 
-O próprio sistema irá informar se está autorizada a retirada do equipamento. Não autoriza-se caso o usuário está com algum equipamento pendente ou este veio com problemas.
-\section[Do transporte]{Do transporte} 
-A forma e o meio de retirada e de transporte para o local de utilização desses equipamentos são de responsabilidade do solicitante. 
-\section[Da devolução do equipamento]{Da devolução do equipamento} 
-O equipamento deverá ser devolvido à recepção do Laboratório dentro da data e hora agendadas.  Um profissional irá proceder à conferência física do material e irá confirmar no sistema se houve a devolução, adicionando observações de eventuais problemas ou danos ocasionados ao equipamento durante seu empréstimo. Se a devolução proceder sem problemas, o sistema irá mandar um recibo de devolução por e-mail do usuário.
-Se o material for entregue danificado e possuir fila de espera, os solicitantes em aguardo irão ser informados do ocorrido. 
-\section[Renovação]{Renovação} 
-Caso deseje perdurar o prazo do objeto de empréstimo, o solicitante poderá fazer a Renovação. Basta ir no Laboratório e solicitar a renovação. Caso o objeto de empréstimo não possua fila de espera, a renovação poderá ser feita com sucesso. A quantidade máxima de renovação de um objeto é de 5 vezes.
+\section[Estabelecer e Revisar as propriedades do sistema]{Estabelecer e Revisar as propriedades do sistema}
+Alguns requisitos e características do sistema serão definidos, para que as atividades que o compõem o projeto sejam melhor direcionados. 
+
+\section[Instalação do pacotes, programas e sistema operacional para o desenvolvimento do projeto]{Instalação do pacotes, programas e sistema operacional para o desenvolvimento do projeto}
+Antes de iniciar o projeto, deve intalar o programas para o desenvolvimento do hardware (programação do microcontroladores, placas de circuito impresso, simulações dos circuitos) e para o desenvolvimento da interface WEB e banco de dados (o pacote XAMPP).
+
+\section[Construção do Módulo leitor de código de barras]{Construção do Módulo leitor de código de barras}
+Aqui será desenvolvido o circuito responsável pela leitura do código de barras do equipamento e da carteira do estudante que indentifica a sua matrícula. 
+
+\section[Construção do Módulo GPS]{Construção do Módulo GPS}
+Módulo que vai alimentar o banco de dados com a localização dos equipamentos. 
+
+\section[Montando o banco de dados do sistema]{Montando o banco de dados do sistema}
+Será modelado um banco de dados com todas as tabelas com colunas e relações nescessárias para atender o objetivo do projeto. 
+
+\section[Desenvolvimento da interface web]{Desenvolvimento da interface web}
+Com o banco de dados modelado, inicia o desenvolvimento da interface web do sistema. Para o desenvolvimento dessa interface irá ser utilizado principalmente framworks, que facilitam o desenvolviemnto.
+
+\section[Integração do Hardware e Software]{Integração do Hardware e Software}
+
+Será feito a integração do hardware e do software, com os dois funcionando em conjunto, fazendo os devidos concertos.
+
+\section[Testes e validações]{Testes e validações}
+
+Com o sistema em operação, realize as verificações e testes para validar sua operação de maneira estável. Com isso, o sistema foi validado e dado como pronto para ser utilizado no controle de empréstimos de equipamentos.
+
+\section[Lições Aprendidas]{Lições Aprendidas}
+Aqui irá registrar tudo que foi aprendido durante o desenvolvimento do projeto. Nesta parte será focado no relatório e na apresentação final.
